@@ -1,0 +1,503 @@
+
+/* =========================================
+   OTAVIO.DEV — Herbário de mundos
+   Identidade visual e layout
+   ========================================= */
+
+:root {
+    --paper: #eee7d7;
+    --paper-dark: #dfd4bd;
+    --ink: #292b24;
+    --green: #344b38;
+    --green-light: #617455;
+    --red: #985e4c;
+    --line: #c9bea7;
+    --mono: "Courier New", monospace;
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Textura discreta de papel */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.15;
+    background-image: radial-gradient(#74664f 0.5px, transparent 0.5px);
+    background-size: 7px 7px;
+}
+
+a {
+    color: var(--green);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    color: var(--red);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--red);
+    outline-offset: 4px;
+}
+
+::selection {
+    background: var(--green);
+    color: var(--paper);
+}
+
+.site {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+
+.masthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--ink);
+}
+
+.wordmark {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    text-decoration: none;
+}
+
+.wordmark span {
+    color: var(--red);
+    font-style: italic;
+}
+
+.edition,
+.eyebrow,
+.section-number,
+.caption,
+.site-nav,
+.footer-note {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    line-height: 1.6;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.edition {
+    text-align: right;
+}
+
+/* Navegação */
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 25px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.site-nav a {
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Abertura editorial */
+
+.hero {
+    position: relative;
+    padding: 95px 0 85px;
+    border-bottom: 1px solid var(--ink);
+}
+
+.hero::after {
+    content: "❧";
+    position: absolute;
+    right: 2%;
+    bottom: 10px;
+    color: var(--green-light);
+    font-family: var(--serif);
+    font-size: clamp(5rem, 12vw, 10rem);
+    line-height: 1;
+    opacity: 0.75;
+    transform: rotate(-25deg);
+    pointer-events: none;
+}
+
+.eyebrow {
+    color: var(--red);
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 20px 0;
+    font-family: var(--serif);
+    font-size: clamp(3.6rem, 9vw, 8rem);
+    font-weight: normal;
+    letter-spacing: -0.075em;
+    line-height: 0.99;
+}
+
+.hero h1 em {
+    color: var(--green);
+    font-weight: normal;
+}
+
+.hero-intro {
+    max-width: 520px;
+    margin: 30px 0 0;
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 25px;
+    margin-top: 35px;
+    color: #625f52;
+}
+
+/* Seções e colunas */
+
+.content-layout {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 55px;
+}
+
+.index-column {
+    padding-top: 48px;
+}
+
+.index-column p {
+    position: sticky;
+    top: 25px;
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.index-column strong {
+    display: block;
+    color: var(--red);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.main-column {
+    min-width: 0;
+}
+
+.content-section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--line);
+    scroll-margin-top: 20px;
+}
+
+.section-number {
+    color: var(--red);
+}
+
+.content-section h2 {
+    margin: 5px 0 25px;
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: normal;
+    letter-spacing: -0.045em;
+    line-height: 1.15;
+}
+
+.content-section h3 {
+    margin: 35px 0 10px;
+    font-family: var(--serif);
+    font-size: 1.65rem;
+    font-weight: normal;
+    line-height: 1.3;
+}
+
+.content-section p {
+    max-width: 680px;
+}
+
+.lead {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+
+.dropcap::first-letter {
+    float: left;
+    padding: 5px 10px 0 0;
+    color: var(--green);
+    font-family: var(--serif);
+    font-size: 4.5rem;
+    line-height: 0.85;
+}
+
+.small-note {
+    padding-left: 18px;
+    border-left: 2px solid var(--red);
+    color: #615d51;
+    font-size: 0.9rem;
+}
+
+/* Citação */
+
+blockquote {
+    margin: 35px 0;
+    padding: 5px 0 5px 25px;
+    border-left: 1px solid var(--green);
+    color: var(--green);
+    font-family: var(--serif);
+    font-size: 1.55rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 12px;
+    color: var(--ink);
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-style: normal;
+    letter-spacing: 0.04em;
+}
+
+/* Lista editorial de interesses */
+
+.interest-list {
+    margin: 25px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.interest-list li {
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr);
+    gap: 12px;
+    padding: 17px 0;
+    border-top: 1px solid var(--line);
+}
+
+.interest-list li::before {
+    content: attr(data-number);
+    padding-top: 4px;
+    color: var(--red);
+    font-family: var(--mono);
+    font-size: 0.72rem;
+}
+
+.interest-list strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.interest-list p {
+    margin: 5px 0 0;
+}
+
+/* Bloco de código */
+
+.code-note {
+    margin: 30px 0;
+    padding: 22px;
+    overflow-wrap: anywhere;
+    background: #29392d;
+    color: #e8e2d3;
+}
+
+.code-note .caption {
+    display: block;
+    margin-bottom: 15px;
+    color: #b5c79c;
+}
+
+.code-note code {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    line-height: 2;
+}
+
+/* Livros */
+
+.book-entry {
+    display: grid;
+    grid-template-columns: 85px minmax(0, 1fr);
+    gap: 22px;
+    align-items: start;
+    margin: 30px 0;
+}
+
+.book-mark {
+    display: grid;
+    place-items: center;
+    min-height: 110px;
+    padding: 10px;
+    background: var(--green);
+    color: var(--paper);
+    font-family: var(--serif);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.book-entry:nth-of-type(even) .book-mark {
+    background: var(--red);
+}
+
+.book-entry h3 {
+    margin: 0 0 5px;
+}
+
+.book-entry p {
+    margin: 5px 0;
+}
+
+/* Formação */
+
+.timeline {
+    margin: 30px 0;
+    border-top: 1px solid var(--ink);
+}
+
+.timeline-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.timeline-item .caption {
+    color: var(--red);
+}
+
+.timeline-item h3 {
+    margin: 5px 0;
+}
+
+/* Contato */
+
+.contact-box {
+    padding: 30px;
+    background: var(--green);
+    color: var(--paper);
+}
+
+.contact-box h2 {
+    margin-top: 10px;
+}
+
+.contact-box a {
+    color: #e0d6bb;
+}
+
+.contact-box .eyebrow {
+    color: #c9d3b0;
+}
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 25px 0 35px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Adaptação para telas pequenas */
+
+@media (max-width: 700px) {
+    .masthead {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .edition {
+        text-align: left;
+    }
+
+    .site-nav {
+        gap: 8px 16px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .hero::after {
+        right: 0;
+        bottom: 0;
+        font-size: 5rem;
+    }
+
+    .content-layout {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .index-column {
+        padding-top: 25px;
+    }
+
+    .index-column p {
+        position: static;
+    }
+
+    .content-section {
+        padding: 35px 0;
+    }
+
+    .book-entry {
+        grid-template-columns: 65px minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .book-mark {
+        min-height: 90px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
