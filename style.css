@@ -579,3 +579,14 @@ footer {
         padding: 22px 7%;
     }
 }
+
+
+/* OCULTAR ETIQUETAS E NUMERAÇÕES */
+
+.numero-secao,
+.foto-numero,
+.inicio-rodape,
+.item-galeria > figcaption span {
+    display: none;
+}
+
