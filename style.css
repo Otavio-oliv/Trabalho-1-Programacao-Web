@@ -258,28 +258,35 @@ img {
     grid-column: span 2;
 }
 
+/* Cada categoria ocupa metade da largura */
 .item-livros,
 .item-idiomas {
     grid-column: span 3;
 }
 
-.item-galeria img {
+/* Grade de fotos dentro de cada categoria */
+.fotos-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+}
+
+/* Todas as fotos ficam com o mesmo tamanho */
+.fotos-galeria img {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    height: 180px;
+    aspect-ratio: auto;
+    object-fit: cover;
     background: #e4e5dc;
     border: 1px solid var(--linha);
     transition: opacity 0.25s ease;
 }
 
-.item-livros img,
-.item-idiomas img {
-    aspect-ratio: 5 / 3;
-}
-
-.item-galeria img:hover {
+.fotos-galeria img:hover {
     opacity: 0.85;
 }
 
+/* Legenda da categoria */
 .item-galeria figcaption {
     display: flex;
     align-items: center;
