@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Otavio de Oliveira</title>
+    <meta name="description" content="Um pouco sobre mim, meus interesses e minha trajetória.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -18,9 +18,9 @@
 <body>
 
     <header class="topo">
-        <a href="#inicio" class="logo">Otavio de Oliveira</a>
+        <a class="logo" href="#inicio">OTAVIO DE OLIVEIRA<span>.</span></a>
 
-        <nav>
+        <nav aria-label="Menu principal">
             <a href="#sobre">Sobre</a>
             <a href="#interesses">Interesses</a>
             <a href="#formacao">Formação</a>
@@ -29,114 +29,149 @@
     </header>
 
     <main>
+        <!-- APRESENTAÇÃO -->
         <section class="inicio" id="inicio">
             <div class="inicio-texto">
-                <p class="etiqueta">UM POUCO SOBRE MIM</p>
+                <p class="etiqueta">TECNOLOGIA · CULTURA · CURIOSIDADE</p>
 
-                <h1>Otavio<br>de Oliveira<span>.</span></h1>
+                <h1>UM POUCO<br>DE TUDO<span>.</span></h1>
 
-                <p>
-                    Ciência da Computação, livros, jogos e outras coisas
-                    que fazem parte de mim.
+                <p class="subtitulo">
+                    Ciência da Computação, livros, jogos
+                    e coisas que gosto de descobrir.
                 </p>
 
-                <a class="link" href="#sobre">Conheça um pouco mais ↓</a>
+                <a class="link-inicio" href="#sobre">
+                    UM POUCO SOBRE MIM ↓
+                </a>
             </div>
 
             <div class="foto-principal">
-                <!-- Coloque sua foto em imagens/perfil.jpg -->
-                <img src="imagens/perfil.jpg" alt="Foto de Otavio">
+                <img
+                    src="imagens/perfil.jpg"
+                    alt="Foto de Otavio de Oliveira"
+                >
+                <span class="foto-numero">01 — EU</span>
+            </div>
+
+            <div class="inicio-rodape">
+                <span>ESTUDANTE DE CIÊNCIA DA COMPUTAÇÃO</span>
+                <span>ALFENAS · MG</span>
             </div>
         </section>
 
+        <!-- SOBRE -->
         <section class="secao sobre" id="sobre">
-            <div class="secao-titulo">
-                <span>01 / SOBRE</span>
-                <h2>Quem sou eu?</h2>
+            <div class="secao-cabecalho">
+                <span class="numero-secao">01 / SOBRE</span>
+                <h2>QUEM SOU EU?</h2>
             </div>
 
-            <div class="sobre-conteudo">
-                <p>
-                    Sou estudante de Ciência da Computação na UNIFAL-MG.
-                    Gosto de programação, jogos, leitura e de aprender idiomas.
-                </p>
+            <p class="sobre-texto">
+                Sou estudante de Ciência da Computação na UNIFAL-MG.
+                Gosto de programação, leitura, jogos e de aprender idiomas.
+            </p>
+        </section>
+
+        <!-- INTERESSES -->
+        <section class="secao interesses" id="interesses">
+            <div class="secao-cabecalho">
+                <span class="numero-secao">02 / FORA DA ROTINA</span>
+                <h2>COISAS DE QUE GOSTO</h2>
+                <p>Alguns dos meus interesses, em fotos.</p>
+            </div>
+
+            <div class="galeria">
+                <figure class="item-galeria item-livros">
+                    <img src="imagens/livros.jpg" alt="Livros e leituras">
+                    <figcaption>
+                        <span>01</span>
+                        <strong>LIVROS</strong>
+                    </figcaption>
+                </figure>
+
+                <figure class="item-galeria item-jogos">
+                    <img src="imagens/jogos.jpg" alt="Jogos">
+                    <figcaption>
+                        <span>02</span>
+                        <strong>JOGOS</strong>
+                    </figcaption>
+                </figure>
+
+                <figure class="item-galeria item-musica">
+                    <img src="imagens/musica.jpg" alt="Música">
+                    <figcaption>
+                        <span>03</span>
+                        <strong>MÚSICA</strong>
+                    </figcaption>
+                </figure>
+
+                <figure class="item-galeria item-idiomas">
+                    <img src="imagens/idiomas.jpg" alt="Estudos de idiomas e culturas">
+                    <figcaption>
+                        <span>04</span>
+                        <strong>IDIOMAS & CULTURAS</strong>
+                    </figcaption>
+                </figure>
+
+                <figure class="item-galeria item-outros">
+                    <img src="imagens/outros.jpg" alt="Outros interesses e momentos">
+                    <figcaption>
+                        <span>05</span>
+                        <strong>OUTROS MOMENTOS</strong>
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
-        <section class="secao" id="interesses">
-            <div class="secao-titulo">
-                <span>02 / FORA DA ROTINA</span>
-                <h2>Meus interesses</h2>
-                <p>Algumas das coisas de que gosto.</p>
+        <!-- FORMAÇÃO E PROJETOS -->
+        <section class="secao formacao" id="formacao">
+            <div class="secao-cabecalho">
+                <span class="numero-secao">03 / ESTUDOS</span>
+                <h2>O QUE ESTOU FAZENDO</h2>
             </div>
 
-            <div class="galeria galeria-livros">
-                <figure class="foto foto-grande">
-                    <img src="imagens/livros.jpg" alt="Livros da minha estante">
-                    <figcaption>01 — Livros</figcaption>
-                </figure>
-
-                <figure class="foto">
-                    <img src="imagens/jogos.jpg" alt="Meu interesse por jogos">
-                    <figcaption>02 — Jogos</figcaption>
-                </figure>
-
-                <figure class="foto">
-                    <img src="imagens/musica.jpg" alt="Meu gosto musical">
-                    <figcaption>03 — Música</figcaption>
-                </figure>
-
-                <figure class="foto foto-grande">
-                    <img src="imagens/idiomas.jpg" alt="Estudos de idiomas">
-                    <figcaption>04 — Idiomas e culturas</figcaption>
-                </figure>
-
-                <figure class="foto">
-                    <img src="imagens/outros.jpg" alt="Outros interesses pessoais">
-                    <figcaption>05 — Outros momentos</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section class="secao" id="formacao">
-            <div class="secao-titulo">
-                <span>03 / ESTUDOS</span>
-                <h2>Formação</h2>
-            </div>
-
-            <div class="formacao-item">
+            <div class="linha-formacao">
+                <span class="formacao-numero">01</span>
                 <div>
                     <h3>Ciência da Computação</h3>
                     <p>Universidade Federal de Alfenas — UNIFAL-MG</p>
                 </div>
-                <span>Graduação</span>
+                <span class="formacao-tag">GRADUAÇÃO</span>
             </div>
 
-            <div class="formacao-item">
+            <div class="linha-formacao">
+                <span class="formacao-numero">02</span>
                 <div>
-                    <h3>Projetos acadêmicos</h3>
-                    <p>Programação, desenvolvimento e trabalhos da faculdade.</p>
+                    <h3>Projetos e programação</h3>
+                    <p>Exercícios, trabalhos acadêmicos e projetos pessoais.</p>
                 </div>
-                <a href="https://github.com/Otavio-oliv" target="_blank" rel="noopener noreferrer">
-                    Meu GitHub ↗
+                <a class="link-github"
+                   href="https://github.com/Otavio-oliv"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    VER GITHUB ↗
                 </a>
             </div>
         </section>
 
-        <section class="secao contato" id="contato">
-            <span>04 / CONTATO</span>
-            <h2>Vamos nos conectar?</h2>
+        <!-- CONTATO -->
+        <section class="contato" id="contato">
+            <span class="numero-secao">04 / CONTATO</span>
+            <h2>ATÉ A PRÓXIMA<span>.</span></h2>
+            <p>Me encontre por aqui:</p>
 
             <a href="https://github.com/Otavio-oliv"
-               target="_blank" rel="noopener noreferrer">
-                GitHub ↗
+               target="_blank"
+               rel="noopener noreferrer">
+                GITHUB ↗
             </a>
         </section>
     </main>
 
     <footer>
-        <p>Otavio de Oliveira</p>
-        <p>Feito por mim.</p>
+        <span>OTAVIO DE OLIVEIRA</span>
+        <span>FEITO POR MIM · 2026</span>
     </footer>
 
 </body>
