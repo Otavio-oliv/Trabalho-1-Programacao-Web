@@ -26,7 +26,7 @@ body {
     background: var(--fundo);
     color: var(--texto);
     font-family: var(--fonte-texto);
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.8;
 }
 
@@ -49,7 +49,7 @@ img {
 
 .topo {
     min-height: 76px;
-    padding: 18px 8%;
+    padding: 20px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,7 +59,7 @@ img {
 
 .logo {
     font-family: var(--fonte-titulo);
-    font-size: 25px;
+    font-size: 29px;
     letter-spacing: 1px;
     line-height: 1;
     white-space: nowrap;
@@ -72,11 +72,11 @@ img {
 .topo nav {
     display: flex;
     justify-content: center;
-    gap: 28px;
+    gap: 30px;
 }
 
 .topo nav a {
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 600;
     transition: color 0.2s ease;
 }
@@ -111,16 +111,16 @@ img {
 
 .etiqueta {
     display: inline-block;
-    padding: 6px 13px;
+    padding: 7px 14px;
     border: 1px solid var(--linha);
     border-radius: 30px;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
 
 .inicio h1 {
-    margin: 25px 0 18px;
+    margin: 25px 0 22px;
     font-family: var(--fonte-titulo);
     font-size: clamp(75px, 8vw, 112px);
     font-weight: 400;
@@ -134,17 +134,17 @@ img {
 }
 
 .subtitulo {
-    max-width: 350px;
-    margin: 0 auto 25px;
-    font-size: 13px;
-    line-height: 1.9;
+    max-width: 400px;
+    margin: 0 auto 28px;
+    font-size: 16px;
+    line-height: 1.8;
 }
 
 .link-inicio {
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     border-bottom: 1px solid var(--destaque);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
@@ -176,10 +176,10 @@ img {
     position: absolute;
     right: 9px;
     bottom: 9px;
-    padding: 5px 10px;
+    padding: 6px 11px;
     background: var(--lima);
     color: var(--texto);
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
 }
 
@@ -191,7 +191,7 @@ img {
     gap: 20px;
     padding-top: 25px;
     border-top: 1px solid var(--linha);
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -204,33 +204,33 @@ img {
 }
 
 .secao-cabecalho {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .numero-secao {
     display: inline-block;
-    padding: 5px 12px;
+    padding: 6px 13px;
     border: 1px solid var(--linha);
     border-radius: 30px;
     color: var(--destaque);
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
 
 .secao-cabecalho h2,
 .contato h2 {
-    margin-top: 13px;
+    margin-top: 15px;
     font-family: var(--fonte-titulo);
-    font-size: clamp(45px, 6vw, 70px);
+    font-size: clamp(48px, 6vw, 72px);
     font-weight: 400;
     line-height: 1.05;
 }
 
 .secao-cabecalho > p {
-    margin-top: 10px;
-    font-size: 12px;
+    margin-top: 12px;
+    font-size: 14px;
     color: #656b62;
 }
 
@@ -242,9 +242,9 @@ img {
 }
 
 .sobre-texto {
-    max-width: 630px;
+    max-width: 680px;
     margin: 0 auto;
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: clamp(17px, 2vw, 21px);
     line-height: 1.9;
 }
 
@@ -253,7 +253,7 @@ img {
 .galeria {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 35px 18px;
+    gap: 38px 20px;
 }
 
 .item-galeria {
@@ -261,22 +261,21 @@ img {
     grid-column: span 2;
 }
 
-/* Livros e idiomas ocupam metade da largura */
 .item-livros,
 .item-idiomas {
     grid-column: span 3;
 }
 
-/* Grade de fotos de cada categoria */
+/* GRADE INTERNA DAS FOTOS */
 
 .fotos-galeria {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
-    gap: 16px 10px;
+    gap: 18px 12px;
 }
 
-/* Cartão individual de cada foto */
+/* CADA FOTO E SUA LEGENDA */
 
 .foto-card {
     min-width: 0;
@@ -285,7 +284,7 @@ img {
 
 .foto-card img {
     width: 100%;
-    height: 180px;
+    height: 190px;
     object-fit: cover;
     background: #e4e5dc;
     border: 1px solid var(--linha);
@@ -296,35 +295,33 @@ img {
     opacity: 0.85;
 }
 
-/* Legenda de cada foto */
-
 .foto-card p {
-    margin-top: 8px;
-    color: #656b62;
-    font-size: 11px;
-    line-height: 1.6;
+    margin-top: 9px;
+    color: #555e55;
+    font-size: 13px;
+    line-height: 1.7;
     overflow-wrap: anywhere;
 }
 
-/* Legenda geral da categoria */
+/* TÍTULO DE CADA CATEGORIA */
 
 .item-galeria > figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding-top: 16px;
+    padding-top: 18px;
     text-align: center;
 }
 
 .item-galeria > figcaption span {
     color: var(--destaque);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 .item-galeria > figcaption strong {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -340,7 +337,7 @@ img {
     grid-template-columns: 45px 1fr auto;
     align-items: center;
     gap: 20px;
-    padding: 25px 0;
+    padding: 27px 0;
     border-top: 1px solid #d1d7cb;
     text-align: center;
 }
@@ -348,30 +345,30 @@ img {
 .formacao-numero {
     color: var(--destaque);
     font-family: var(--fonte-titulo);
-    font-size: 27px;
+    font-size: 30px;
 }
 
 .linha-formacao h3 {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
 }
 
 .linha-formacao p {
-    margin-top: 4px;
-    color: #656b62;
-    font-size: 11px;
+    margin-top: 5px;
+    color: #555e55;
+    font-size: 13px;
 }
 
 .formacao-tag {
-    padding: 5px 10px;
+    padding: 6px 12px;
     background: var(--lima);
     border-radius: 20px;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
 }
 
 .link-github {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     white-space: nowrap;
 }
@@ -391,21 +388,21 @@ img {
 }
 
 .contato h2 {
-    margin: 20px 0 10px;
+    margin: 22px 0 12px;
 }
 
 .contato > p {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     color: #d6d9d1;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .contato > a {
     display: inline-block;
-    padding: 10px 22px;
+    padding: 12px 24px;
     border: 1px solid var(--lima);
     color: var(--lima);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
     transition: background 0.2s ease, color 0.2s ease;
@@ -423,15 +420,15 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 15px;
-    padding: 22px 8%;
+    padding: 24px 8%;
     background: #102f34;
     color: #d6d9d1;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
 
-/* RESPONSIVIDADE: TABLETS */
+/* TABLETS */
 
 @media (max-width: 800px) {
 
@@ -455,6 +452,10 @@ footer {
         font-size: clamp(60px, 9vw, 82px);
     }
 
+    .subtitulo {
+        font-size: 15px;
+    }
+
     .foto-principal {
         height: 340px;
     }
@@ -468,7 +469,7 @@ footer {
     }
 }
 
-/* RESPONSIVIDADE: CELULARES */
+/* CELULARES */
 
 @media (max-width: 560px) {
 
@@ -485,7 +486,7 @@ footer {
     }
 
     .topo nav a {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .inicio {
@@ -502,13 +503,17 @@ footer {
         font-size: clamp(76px, 17vw, 105px);
     }
 
+    .subtitulo {
+        font-size: 15px;
+    }
+
     .foto-principal {
         width: 85%;
         height: 360px;
     }
 
     .inicio-rodape {
-        font-size: 8px;
+        font-size: 9px;
         letter-spacing: 0.5px;
     }
 
@@ -538,15 +543,15 @@ footer {
 
     .fotos-galeria {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px 8px;
+        gap: 14px 10px;
     }
 
     .foto-card img {
-        height: 135px;
+        height: 150px;
     }
 
     .foto-card p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .item-galeria > figcaption {
@@ -555,7 +560,7 @@ footer {
     }
 
     .item-galeria > figcaption strong {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     .linha-formacao {
@@ -579,7 +584,6 @@ footer {
         padding: 22px 7%;
     }
 }
-
 
 /* OCULTAR ETIQUETAS E NUMERAÇÕES */
 
