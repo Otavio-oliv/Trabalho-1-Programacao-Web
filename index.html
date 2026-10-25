@@ -4,302 +4,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um arquivo pessoal sobre programação, literatura, jogos, idiomas e natureza.">
-    <title>Otávio — Herbário de mundos</title>
+
+    <title>Otavio de Oliveira</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="site">
 
-        <header class="masthead">
-            <a class="wordmark" href="#inicio">otavio<span>.dev</span></a>
-            <div class="edition">Caderno pessoal · Volume I<br>Alfenas, Brasil</div>
-        </header>
+    <header class="topo">
+        <a href="#inicio" class="logo">Otavio de Oliveira</a>
 
-        <nav class="site-nav" aria-label="Navegação principal">
+        <nav>
             <a href="#sobre">Sobre</a>
             <a href="#interesses">Interesses</a>
-            <a href="#biblioteca">Biblioteca</a>
-            <a href="#computacao">Computação</a>
             <a href="#formacao">Formação</a>
             <a href="#contato">Contato</a>
         </nav>
+    </header>
 
-        <main>
-            <section class="hero" id="inicio">
-                <p class="eyebrow">Notas de uma coleção em andamento</p>
-                <h1>Um arquivo de<br><em>pequenos mundos.</em></h1>
-                <p class="hero-intro">
-                    Entre livros, jogos, códigos e idiomas, reúno aqui
-                    algumas das coisas que despertam minha curiosidade.
-                    Este espaço é um registro dos meus interesses e do
-                    que venho aprendendo.
+    <main>
+        <section class="inicio" id="inicio">
+            <div class="inicio-texto">
+                <p class="etiqueta">UM POUCO SOBRE MIM</p>
+
+                <h1>Otavio<br>de Oliveira<span>.</span></h1>
+
+                <p>
+                    Ciência da Computação, livros, jogos e outras coisas
+                    que fazem parte de mim.
                 </p>
-                <div class="hero-meta caption">
-                    <span>Ciência da Computação</span>
-                    <span>Literatura & cultura</span>
-                    <span>Natureza</span>
-                </div>
-            </section>
 
-            <div class="content-layout">
-                <aside class="index-column">
-                    <p><strong>Índice A.</strong>
-                    Caderno de campo<br>
-                    Coleção pessoal<br>
-                    Atualizado em 2026</p>
-                </aside>
-
-                <div class="main-column">
-                    <section class="content-section" id="sobre">
-                        <p class="section-number">01 — Apresentação</p>
-                        <h2>Sobre quem escreve.</h2>
-                        <p class="lead dropcap">
-                            Meu nome é Otávio e sou estudante de Ciência
-                            da Computação na Universidade Federal de
-                            Alfenas, a UNIFAL-MG.
-                        </p>
-                        <p>
-                            Tenho interesse por programação, matemática
-                            e tecnologia, mas meus interesses não ficam
-                            limitados ao computador. Também gosto de ler,
-                            jogar videogames, ouvir música e aprender
-                            idiomas. Este site nasceu como uma forma de
-                            reunir essas diferentes partes em um só lugar.
-                        </p>
-                        <p>
-                            Pense nele como um caderno que cresce aos
-                            poucos: algumas páginas falam de estudos,
-                            outras de histórias, e algumas simplesmente
-                            guardam coisas que achei interessantes.
-                        </p>
-                    </section>
-
-                    <section class="content-section" id="interesses">
-                        <p class="section-number">02 — Coleção pessoal</p>
-                        <h2>Coisas que me acompanham.</h2>
-
-                        <ul class="interest-list">
-                            <li data-number="A.">
-                                <div>
-                                    <strong>Jogos eletrônicos</strong>
-                                    <p>
-                                        Gosto de explorar universos,
-                                        acompanhar narrativas e descobrir
-                                        como diferentes jogos constroem
-                                        suas experiências.
-                                    </p>
-                                </div>
-                            </li>
-                            <li data-number="B.">
-                                <div>
-                                    <strong>Literatura</strong>
-                                    <p>
-                                        Tenho interesse por fantasia,
-                                        terror, mistério e literatura
-                                        brasileira. Gosto de histórias
-                                        que continuam na cabeça depois
-                                        que a leitura termina.
-                                    </p>
-                                </div>
-                            </li>
-                            <li data-number="C.">
-                                <div>
-                                    <strong>Idiomas</strong>
-                                    <p>
-                                        Estudar francês e japonês me
-                                        permite conhecer outras formas
-                                        de expressão e descobrir aspectos
-                                        de culturas diferentes.
-                                    </p>
-                                </div>
-                            </li>
-                            <li data-number="D.">
-                                <div>
-                                    <strong>Cultura japonesa</strong>
-                                    <p>
-                                        Animes, jogos, escrita e costumes
-                                        japoneses despertam minha
-                                        curiosidade e também se conectam
-                                        ao meu interesse por idiomas.
-                                    </p>
-                                </div>
-                            </li>
-                            <li data-number="E.">
-                                <div>
-                                    <strong>Música e natureza</strong>
-                                    <p>
-                                        Gosto de rock, pop e trilhas sonoras
-                                        de jogos. Florestas e montanhas
-                                        também me inspiram, especialmente
-                                        pela atmosfera e pelas cores.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section class="content-section" id="biblioteca">
-                        <p class="section-number">03 — Estante</p>
-                        <h2>Entre páginas.</h2>
-                        <p>
-                            A leitura é uma maneira de conhecer outros
-                            mundos sem sair do lugar. Tenho interesse
-                            por fantasia, terror, mistério e livros
-                            nacionais.
-                        </p>
-
-                        <div class="book-entry">
-                            <div class="book-mark" aria-hidden="true">01</div>
-                            <div>
-                                <p class="caption">Mistério · Agatha Christie</p>
-                                <h3>E Não Sobrou Nenhum</h3>
-                                <p>
-                                    Um romance de mistério construído
-                                    em torno de segredos, suspeitas
-                                    e acontecimentos inquietantes.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="book-entry">
-                            <div class="book-mark" aria-hidden="true">02</div>
-                            <div>
-                                <p class="caption">Literatura brasileira</p>
-                                <h3>Machado de Assis</h3>
-                                <p>
-                                    Tenho interesse pela escrita do autor,
-                                    especialmente pela ironia e pelas
-                                    observações sobre a sociedade e
-                                    o comportamento humano.
-                                </p>
-                            </div>
-                        </div>
-
-                        <blockquote>
-                            Cada livro abre uma porta para um mundo
-                            que não conhecíamos.
-                            <cite>Nota do caderno · Literatura</cite>
-                        </blockquote>
-                    </section>
-
-                    <section class="content-section" id="computacao">
-                        <p class="section-number">04 — Laboratório</p>
-                        <h2>Aprendendo a construir.</h2>
-                        <p>
-                            Na Ciência da Computação, tenho estudado
-                            programação, algoritmos, estruturas de dados,
-                            matemática e fundamentos de sistemas
-                            computacionais. Atualmente, C e C++ fazem
-                            parte dos meus estudos.
-                        </p>
-                        <p>
-                            Gosto de entender como as coisas funcionam
-                            por trás do resultado final. Um programa
-                            pode parecer simples quando está pronto,
-                            mas existe uma sequência de decisões e
-                            estruturas que torna aquilo possível.
-                        </p>
-
-                        <div class="code-note">
-                            <span class="caption">Registro de laboratório / 001</span>
-                            <code>
-                                aprender();<br>
-                                experimentar();<br>
-                                corrigir_erros();<br>
-                                repetir();
-                            </code>
-                        </div>
-
-                        <p>
-                            Também tenho interesse em desenvolvimento web.
-                            Este próprio site é um exercício de organização
-                            de conteúdo com HTML e apresentação visual
-                            com CSS.
-                        </p>
-
-                        <p>
-                            <a href="https://github.com/Otavio-oliv"
-                               target="_blank" rel="noopener noreferrer">
-                                Consulte meus repositórios no GitHub.
-                            </a>
-                        </p>
-
-                        <p>
-                            <a href="https://www.unifal-mg.edu.br/"
-                               target="_blank" rel="noopener noreferrer">
-                                Universidade Federal de Alfenas — UNIFAL-MG.
-                            </a>
-                        </p>
-                    </section>
-
-                    <section class="content-section" id="formacao">
-                        <p class="section-number">05 — Percurso acadêmico</p>
-                        <h2>Onde estou aprendendo.</h2>
-
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <p class="caption">Formação atual</p>
-                                <h3>Ciência da Computação</h3>
-                                <p>
-                                    Universidade Federal de Alfenas
-                                    (UNIFAL-MG), Alfenas, Minas Gerais.
-                                </p>
-                                <p>
-                                    Bacharelado em andamento.
-                                    Início: [inserir ano].
-                                </p>
-                            </div>
-
-                            <div class="timeline-item">
-                                <p class="caption">Formação anterior</p>
-                                <h3>Ensino Médio</h3>
-                                <p>
-                                    [Inserir nome da escola, cidade
-                                    e ano de conclusão.]
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="content-section" id="contato">
-                        <p class="section-number">06 — Correspondência</p>
-                        <div class="contact-box">
-                            <p class="eyebrow">Fim destas páginas</p>
-                            <h2>Vamos manter contato.</h2>
-                            <p>
-                                Este arquivo ainda está em construção.
-                                Você pode encontrar meus projetos e
-                                acompanhar parte do meu aprendizado
-                                pelos links abaixo.
-                            </p>
-                            <p>
-                                <a href="https://github.com/Otavio-oliv"
-                                   target="_blank" rel="noopener noreferrer">
-                                    GitHub — Otavio-oliv
-                                </a>
-                            </p>
-                            <p>
-                                <a href="https://www.unifal-mg.edu.br/"
-                                   target="_blank" rel="noopener noreferrer">
-                                    Universidade Federal de Alfenas
-                                </a>
-                            </p>
-                            <p class="caption">
-                                E-mail: [inserir apenas se desejar divulgá-lo]
-                            </p>
-                        </div>
-                    </section>
-                </div>
+                <a class="link" href="#sobre">Conheça um pouco mais ↓</a>
             </div>
-        </main>
 
-        <footer>
-            <p class="footer-note">Otavio.dev · Caderno pessoal</p>
-            <p class="footer-note">Feito em HTML e CSS · 2026</p>
-        </footer>
+            <div class="foto-principal">
+                <!-- Coloque sua foto em imagens/perfil.jpg -->
+                <img src="imagens/perfil.jpg" alt="Foto de Otavio">
+            </div>
+        </section>
 
-    </div>
+        <section class="secao sobre" id="sobre">
+            <div class="secao-titulo">
+                <span>01 / SOBRE</span>
+                <h2>Quem sou eu?</h2>
+            </div>
+
+            <div class="sobre-conteudo">
+                <p>
+                    Sou estudante de Ciência da Computação na UNIFAL-MG.
+                    Gosto de programação, jogos, leitura e de aprender idiomas.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao" id="interesses">
+            <div class="secao-titulo">
+                <span>02 / FORA DA ROTINA</span>
+                <h2>Meus interesses</h2>
+                <p>Algumas das coisas de que gosto.</p>
+            </div>
+
+            <div class="galeria galeria-livros">
+                <figure class="foto foto-grande">
+                    <img src="imagens/livros.jpg" alt="Livros da minha estante">
+                    <figcaption>01 — Livros</figcaption>
+                </figure>
+
+                <figure class="foto">
+                    <img src="imagens/jogos.jpg" alt="Meu interesse por jogos">
+                    <figcaption>02 — Jogos</figcaption>
+                </figure>
+
+                <figure class="foto">
+                    <img src="imagens/musica.jpg" alt="Meu gosto musical">
+                    <figcaption>03 — Música</figcaption>
+                </figure>
+
+                <figure class="foto foto-grande">
+                    <img src="imagens/idiomas.jpg" alt="Estudos de idiomas">
+                    <figcaption>04 — Idiomas e culturas</figcaption>
+                </figure>
+
+                <figure class="foto">
+                    <img src="imagens/outros.jpg" alt="Outros interesses pessoais">
+                    <figcaption>05 — Outros momentos</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="secao" id="formacao">
+            <div class="secao-titulo">
+                <span>03 / ESTUDOS</span>
+                <h2>Formação</h2>
+            </div>
+
+            <div class="formacao-item">
+                <div>
+                    <h3>Ciência da Computação</h3>
+                    <p>Universidade Federal de Alfenas — UNIFAL-MG</p>
+                </div>
+                <span>Graduação</span>
+            </div>
+
+            <div class="formacao-item">
+                <div>
+                    <h3>Projetos acadêmicos</h3>
+                    <p>Programação, desenvolvimento e trabalhos da faculdade.</p>
+                </div>
+                <a href="https://github.com/Otavio-oliv" target="_blank" rel="noopener noreferrer">
+                    Meu GitHub ↗
+                </a>
+            </div>
+        </section>
+
+        <section class="secao contato" id="contato">
+            <span>04 / CONTATO</span>
+            <h2>Vamos nos conectar?</h2>
+
+            <a href="https://github.com/Otavio-oliv"
+               target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Otavio de Oliveira</p>
+        <p>Feito por mim.</p>
+    </footer>
+
 </body>
 </html>
