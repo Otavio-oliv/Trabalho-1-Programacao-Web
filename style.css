@@ -1,4 +1,6 @@
 
+/* CONFIGURAÇÕES GERAIS */
+
 :root {
     --fundo: #f4f3ee;
     --texto: #183c42;
@@ -35,9 +37,7 @@ a {
 
 img {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
 }
 
 ::selection {
@@ -166,6 +166,9 @@ img {
 }
 
 .foto-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -250,7 +253,7 @@ img {
 .galeria {
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 28px 18px;
+    gap: 35px 18px;
 }
 
 .item-galeria {
@@ -258,51 +261,69 @@ img {
     grid-column: span 2;
 }
 
-/* Cada categoria ocupa metade da largura */
+/* Livros e idiomas ocupam metade da largura */
 .item-livros,
 .item-idiomas {
     grid-column: span 3;
 }
 
-/* Grade de fotos dentro de cada categoria */
+/* Grade de fotos de cada categoria */
+
 .fotos-galeria {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
+    align-items: start;
+    gap: 16px 10px;
 }
 
-/* Todas as fotos ficam com o mesmo tamanho */
-.fotos-galeria img {
+/* Cartão individual de cada foto */
+
+.foto-card {
+    min-width: 0;
+    text-align: center;
+}
+
+.foto-card img {
     width: 100%;
     height: 180px;
-    aspect-ratio: auto;
     object-fit: cover;
     background: #e4e5dc;
     border: 1px solid var(--linha);
     transition: opacity 0.25s ease;
 }
 
-.fotos-galeria img:hover {
+.foto-card img:hover {
     opacity: 0.85;
 }
 
-/* Legenda da categoria */
-.item-galeria figcaption {
+/* Legenda de cada foto */
+
+.foto-card p {
+    margin-top: 8px;
+    color: #656b62;
+    font-size: 11px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Legenda geral da categoria */
+
+.item-galeria > figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding-top: 12px;
+    padding-top: 16px;
     text-align: center;
 }
 
-.item-galeria figcaption span {
+.item-galeria > figcaption span {
     color: var(--destaque);
     font-size: 10px;
     font-weight: 700;
 }
 
-.item-galeria figcaption strong {
+.item-galeria > figcaption strong {
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -410,9 +431,10 @@ footer {
     letter-spacing: 0.5px;
 }
 
-/* RESPONSIVIDADE */
+/* RESPONSIVIDADE: TABLETS */
 
 @media (max-width: 800px) {
+
     .topo {
         padding: 20px 6%;
         flex-direction: column;
@@ -446,7 +468,10 @@ footer {
     }
 }
 
+/* RESPONSIVIDADE: CELULARES */
+
 @media (max-width: 560px) {
+
     .topo {
         gap: 17px;
     }
@@ -496,40 +521,40 @@ footer {
         font-size: 48px;
     }
 
+    /* Uma categoria por linha */
+
     .galeria {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 25px 12px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
     }
 
     .item-galeria,
     .item-livros,
     .item-idiomas {
-        grid-column: span 1;
+        grid-column: 1;
     }
 
-    
+    /* Duas fotos por linha */
+
     .fotos-galeria {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 6px;
-    }
-    
-    .fotos-galeria img {
-        height: 125px;
+        gap: 12px 8px;
     }
 
-
-    .item-galeria img,
-    .item-livros img,
-    .item-idiomas img {
-        aspect-ratio: 3 / 4;
+    .foto-card img {
+        height: 135px;
     }
 
-    .item-galeria figcaption {
+    .foto-card p {
+        font-size: 10px;
+    }
+
+    .item-galeria > figcaption {
         gap: 6px;
         flex-wrap: wrap;
     }
 
-    .item-galeria figcaption strong {
+    .item-galeria > figcaption strong {
         font-size: 9px;
     }
 
